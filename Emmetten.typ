@@ -933,26 +933,4 @@ Die KI kennt Typst noch nicht so gut. Wandelt aber recht gekonnt #(LaTeX)-Dateie
 
 == Start-Code
 
-#codly(header: [Start])
-
-```typst
-#import "@preview/accelerated-jacow:0.14.0": jacow
-#import "@preview/cetz:0.4.2"
-#import "@preview/cetz-plot:0.1.3"
-#import "@preview/physica:0.9.8": *
-
-#show: jacow.with(
-  title: [Mein erstes Paper in Typst],
-  authors: ((name: "Vorname Name", mail: "vorname.nachname@ethz.ch", at: "eth")),
-  affiliations: (eth: "ETHZ"),
-  abstract: [ #lorem(20) ],
-)
-= Meine erste Überschrift
-Ein wichtiges Isotop: $isotope("He", a: 4, z: 2)$
-
-#lorem(800)
-```
-
-== Weitere Beispiele
-
-#align(center)[#text(fill: eth-theme-colors.primary, size: 30pt)[#link("https://github.com/christianprim/")]]
+#align(center)[#text(fill: eth-theme-colors.primary, size: 30pt)[#link("https://github.com/christianprim/emmetten")]]
